@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<!-- comentarios -->
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js"></script>
+        <script src="js/bd.js"></script>
+        <title>VitoCar v1.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div> VitoCar v1.0 </div>
+
+        <form action="">
+            <label for="dni">DNI:</label>
+            <input type="text" id="dni" name="dni" value="" required><br>
+            
+            <label for="email">Email:</label> 
+            <input type="email" id="email" name="email" value=""><br>
+            
+            <label for="password">Password:</label>
+            <input type="password" id="password" name="password" value=""><br>
+            
+            <label for="nombre">Nombre:</label>
+            <input type="text" id="nombre" name="nombre" value=""><br>
+            
+            <label for="imagen">Imagen:</label>
+            <input type="text" id="imagen" name="imagen" value=""><br>
+           
+            <label for="modelo">Modelo coche:</label>
+            <input type="text" id="modelo" name="modelo" value=""><br>
+            
+            <label for="telefono">Telefono:</label>
+            <input type="tel" id="telefono" name="telefono" value=""><br>
+            
+            <input type="submit" value="Registrar" onclick="addUsuario()">
+        </form> 
+
+        <p>Lista de usuarios registrados:</p>
+
+        <ul id="listElem"></ul>
+
+    </body>
+</html>

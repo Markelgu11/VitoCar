@@ -1,0 +1,13 @@
+/*
+Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+Click nbfs://nbhost/SystemFileSystem/Templates/ClientSide/css.css to edit this template
+*/
+/* 
+    Created on : 21 nov 2022, 1:37:11
+    Author     : markelgu7
+*/
+
+/* Selecciona cualquier <input> no válido */
+input:invalid {
+  background-color: red;
+}

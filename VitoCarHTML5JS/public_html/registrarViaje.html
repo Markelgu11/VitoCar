@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<!-- comentarios -->
+<html>
+    <head>
+        <script src="https://cdn.jsdelivr.net/npm/idb@3.0.2/build/idb.min.js"></script>
+        <script src="js/bd.js"></script>
+        <title>VitoCar v1.0</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    </head>
+
+    <body>
+        <div> VitoCar v1.0 </div>
+
+        <form action="">
+            <label for="idViaje">idViaje:</label>
+            <input type="text" id="idViaje" name="idViaje" value="" required=""><br>
+            
+            <label for="origen">origen:</label> 
+            <input type="text" id="origen" name="origen" value=""><br>
+            
+            <label for="destino">Destino:</label>
+            <input type="text" id="destino" name="destino" value=""><br>
+            
+            <label for="fechaHora">fechaHora</label>
+            <input type="datetime-local" id="fechaHora" name="fechaHora" value=""><br>
+            
+            <label for="precio">Precio en €</label>
+            <input type="text" id="precio" name="precio" value=""><br>
+           
+            <label for="DNIConductor">DNI del conductor:</label>
+            <input type="text" id="DNIConductor" name="DNIConductor" value="" required><br>
+            
+            <input type="submit" value="Registrar" onclick="addViaje()">
+        </form> 
+
+        <p>Lista de viajes registrados:</p>
+
+        <ul id="listElem"></ul>
+
+    </body>
+</html>
